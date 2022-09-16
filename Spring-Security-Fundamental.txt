@@ -1,0 +1,50 @@
+Spring Security
++++++++++++++++
+
+1. Authentication
+2. Authorization
+3. Granted Authority
+4. Roles
+5. Principal
+
+
+Authentication
+==============
+
+Knowledge based authentication
+------------------------------
+-> Username with Password
+->Password, Pincode, Secrete Questions can also be used as per scenario
+
+Possession based Authentication
+-------------------------------
+->Phone/Text Massages
+->Key card/ badges[id-card]
+->Access tokens
+
+Multi-Factor Authentication
+---------------------------
+Username & password in correspondence with Text Message
+
+
+Authorization
+=============
+
+->Is this user allowed to do perticular Operation
+->Are they allowed to do this?
+
+Granted Authority
+=================
+Fine grained permissions, what a user can do?
+
+Roles
+=====
+Group of Authority to assign users
+
+
+Principal
+=========
+A person Identifies through a process of Authentication
+->Loged-In user
+->Application establishes Principle after success login
+

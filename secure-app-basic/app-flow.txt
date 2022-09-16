@@ -1,0 +1,16 @@
+1. Add below dependency
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+
+ 2. User user-name-> user
+ 
+ 3. Password-> spring generated from console
+ 
+ 4. To logout, append '/logout' at the end of URI
+ 
+
+ Once we add security-starter to class-path, spring auto-configures it for login
+ 

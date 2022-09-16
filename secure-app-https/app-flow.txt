@@ -1,0 +1,49 @@
+1. Generate Keystore [Ask from Leaders/Key managing farm]
+
+	keytool -genkey -alias tomcat -storetype PKCS12 -keyalg RSA -keysize 2048 -keystore keystore.p12 
+	-validity 3650
+
+2. Configure below properties-
+
+	-alias <tomcat>
+	-storetype <PKCS12>
+	-keyalg <RSA>
+	-keysize <2048>
+	-keystore <keystore>.p12
+	-validity <3650>
+
+3. Provide other details asked on the go-
+
+4. Add key-store [.p12] file into class-path
+
+5. Configuring SSL Properties
+
+	# The format used for the keystore. It could be set to JKS in case it is a JKS file
+	server.ssl.key-store-type=PKCS12
+	# The path to the keystore containing the certificate
+	server.ssl.key-store=classpath:keystore/baeldung.p12
+	# The password used to generate the certificate
+	server.ssl.key-store-password=password
+	# The alias mapped to the certificate
+	server.ssl.key-alias=baeldung
+	
+6. Configure application to accept only HTTPS requests
+
+	server.ssl.enabled=true
+	
+7. Create a trust store
+	As we have generated a PKCS12 file, we can use the same as the trust store
+	
+	#trust store location
+	trust.store=classpath:keystore/baeldung.p12
+	#trust store password
+	trust.store.password=password
+	
+8. Access using https
+	
+Key-store is basically security certificate, to be trusted by client/chrome
+
+
+
+
+

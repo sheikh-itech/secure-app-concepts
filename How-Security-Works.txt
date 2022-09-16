@@ -1,0 +1,19 @@
+
+1. Spring security-starter enables Servlet Filters for application
+
+2. It adds mandatory authentication for All-Urls [Except /error]
+
+3. Adds login form
+
+4. Handles login errors
+
+5. Applys basic authentication logic [username/password]
+
+6. If User not available [Not configured]
+	Creates default 'username & password' for user
+
+7. We need to override spring authentication mechanism for user defined Authentication
+
+
+
+

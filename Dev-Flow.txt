@@ -1,0 +1,5 @@
+1. Override Authentication Manager
+	-> Get Authentication Manager Builder
+	-> Set configuration for it
+	-> Provide types of authentication [like- In-Memory]
+
