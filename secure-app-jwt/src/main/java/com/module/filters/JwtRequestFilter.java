@@ -18,6 +18,8 @@ import org.springframework.web.filter.OncePerRequestFilter;
 import com.module.services.UserAuthService;
 import com.module.util.JWTUtil;
 
+/**	Spring guarantees that the OncePerRequestFilter is executed only once per request
+ */
 @Service
 public class JwtRequestFilter  extends OncePerRequestFilter {
 

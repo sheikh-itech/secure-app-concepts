@@ -18,7 +18,7 @@ import com.module.repositories.JpaUserAuthRepository;
 import com.module.services.UserAuthService;
 
 
-@SuppressWarnings("deprecation")
+//@SuppressWarnings("deprecation")
 //@Configuration
 //@EnableWebSecurity
 public class SecureAppConfig extends WebSecurityConfigurerAdapter {

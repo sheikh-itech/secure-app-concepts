@@ -1,0 +1,62 @@
+{
+	"info": {
+		"_postman_id": "c79b2f12-9246-4623-b030-8d8e3c33dcee",
+		"name": "SecureAppMicroServices",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8097/home",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJoYXBoZWVqIiwiZXhwIjoxNjYzMDQyODc5LCJpYXQiOjE2NjMwMDY4Nzl9.qR62djR_OeekPWO9L3DKSMw3OEiFnc54oPtSwRtwmA0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8097/home",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8097",
+					"path": [
+						"home"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8097/authenticate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"hapheej\",\r\n    \"password\":\"hapheej\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8097/authenticate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8097",
+					"path": [
+						"authenticate"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
